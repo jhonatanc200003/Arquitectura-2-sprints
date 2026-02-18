@@ -1,0 +1,19 @@
+CREATE DATABASE tiendaGenerica;
+USE tiendaGenerica;
+
+
+CREATE TABLE usuarios (
+    cedula BIGINT PRIMARY KEY,
+    nombreCompleto VARCHAR(100) ,
+    correo VARCHAR(100) ,
+    usuario VARCHAR(50) ,
+    password VARCHAR(100) 
+);
+
+-- Usuario administrador inicial
+INSERT INTO usuarios
+(cedula, nombreCompleto, correo, usuario, password)
+VALUES
+(1, 'Administrador Inicial', 'admin@superiro', 'adminSuperior', 'admin123456');
+
+SELECT * FROM usuarios;
