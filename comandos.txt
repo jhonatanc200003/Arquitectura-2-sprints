@@ -1,0 +1,3 @@
+git push origin main
+git commit -m"Agrega structura inicial del proyecto arquitectura 2"
+git add.
